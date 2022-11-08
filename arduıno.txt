@@ -1,0 +1,113 @@
+#define Buton 8
+
+#define Led9 9
+#define Led8 10
+#define Led7 7
+#define Led6 6
+#define Led5 5
+#define Led4 4
+#define Led3 3
+#define Led 2
+
+int pushButton2 = 2;
+int pushButton3 = 3;
+int pushButton4 = 4;
+int pushButton5 = 5;
+int pushButton6 = 6;
+int pushButton7 = 7;
+int pushButton8 = 10;
+int pushButton9 = 9;
+
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(Buton, INPUT);
+  pinMode(Led, OUTPUT);
+  pinMode(pushButton2, INPUT);
+  pinMode(pushButton3, INPUT);
+  pinMode(pushButton4, INPUT);
+  pinMode(pushButton5, INPUT);
+  pinMode(pushButton6, INPUT);
+  pinMode(pushButton7, INPUT);
+  pinMode(pushButton8, INPUT);
+  pinMode(pushButton9, INPUT);
+  
+}
+void loop()
+{
+  
+  if (digitalRead(pushButton2) == 1){
+  digitalWrite(Led,HIGH);
+  delay(500); 
+  Serial.println("Güney Batı");
+  }
+else{
+  digitalWrite(Led,LOW); 
+
+}
+
+if (digitalRead(pushButton3) == 1){
+  digitalWrite(Led,HIGH);
+  delay(500); 
+  Serial.println("Batı");
+  }
+else{
+  digitalWrite(Led,LOW); 
+
+}
+if (digitalRead(pushButton4) == 1){
+  digitalWrite(Led,HIGH);
+  delay(500); 
+  Serial.println("Küzey Batı");
+  }
+else{
+  digitalWrite(Led,LOW); 
+
+}
+if (digitalRead(pushButton5) == 1){
+  digitalWrite(Led,HIGH);
+  delay(500); 
+  Serial.println("Kuzey");
+  }
+else{
+  digitalWrite(Led,LOW); 
+
+}
+if (digitalRead(pushButton6) == 1){
+  digitalWrite(Led,HIGH);
+  delay(500); 
+  Serial.println("Kuzey Doğu");
+  }
+else{
+  digitalWrite(Led,LOW); 
+
+}
+if (digitalRead(pushButton7) == 1){
+  digitalWrite(Led,HIGH);
+  delay(500); 
+  Serial.println("Doğu");
+  }
+else{
+  digitalWrite(Led,LOW); 
+
+}
+if (digitalRead(pushButton8) == 1){
+  digitalWrite(Led,HIGH);
+  delay(500); 
+  Serial.println("Güney Doğu");
+  }
+else{
+  digitalWrite(Led,LOW); 
+
+}
+if (digitalRead(pushButton9) == 1){
+  digitalWrite(Led,HIGH);
+  delay(500); 
+  Serial.println("Güney");
+  }
+else{
+  digitalWrite(Led,LOW); 
+
+}
+}
